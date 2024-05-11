@@ -1,4 +1,4 @@
-package main.operacoesBasicas;
+package main.list.operacoesBasicas;
 
 public class Item {
     private String product;
