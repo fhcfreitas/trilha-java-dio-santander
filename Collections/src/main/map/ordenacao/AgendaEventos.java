@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import java.time.Month;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
 public class AgendaEventos {
     private Map<LocalDate, Evento> agendaEventos;
@@ -17,7 +18,8 @@ public class AgendaEventos {
     }
 
     public void exibirAgenda(){
-        System.out.println(agendaEventos);
+        Map<LocalDate, Evento> eventosTreeMap = new TreeMap<>(agendaEventos);
+        System.out.println(eventosTreeMap);
     }
 
     public void obterProximoEvento(){
